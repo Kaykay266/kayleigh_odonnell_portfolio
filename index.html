@@ -1,15 +1,142 @@
-<!DOCTYPE html>
-
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOUR NAME — Game Developer</title>
+  <meta name="description" content="YOUR NAME — game developer portfolio">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="topbar">
+    <a class="logo" href="#">Kayleigh<span>O'Donnell</span></a>
+    <nav>
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <h1>Welcome to the Kayleigh-net</h1>
+  <main>
+    <!-- HERO / ABOUT ME AT THE TOP -->
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow">GAME/ENGINE DEVELOPER · PROGRAMMER</p>
+        <h1>Hi, I'm <span>Kayleigh O'Donnell.</span></h1>
+        <p class="intro">
+          I'm a game and engine developer who loves solving technical problems, games design,
+          and turning ideas into playable experiences. Despite currently being based in Dundee Scotland,
+          I'm eager for programming prospects anywhere in europe due to having a wide variety of citizenships.
+        </p>
+        <p class="bio">
+          I'm currently studying Computer Games Technology in my 3rd year at<strong>Abertay University</strong>.
+          I have mostly worked in custom engines and coding from scratch but I enjoy working with 
+          <strong>Unity and Unreal Engine.</strong> as I am proficient in <strong>C++ and C#.</strong>
+        </p>
+        <div class="buttons">
+          <a class="button primary" href="#games">See my games ↓</a>
+          <a class="button secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="portrait-placeholder">YOUR<br>PHOTO</div>
+        <div class="mini-facts">
+          <div><span>Based in</span><b>Dundee Scotland</b></div>
+          <div><span>Focus</span><b>GAME/ENGINE DEVELOPMENT</b></div>
+          <div><span>Tools</span><b>UNITY · UNREAL · C++ · c# · SFML</b></div>
+        </div>
+      </div>
+    </section>
 
+    <!-- GAMES: EVERYTHING IS ALREADY VISIBLE, NOTHING NEEDS TO BE CLICKED -->
+    <section class="games-section" id="games">
+      <div class="section-heading">
+        <p class="eyebrow">MY WORK</p>
+        <h2>Games &amp; Projects</h2>
+        <p>Here are some of the games and projects I've worked on.</p>
+      </div>
+
+      <div class="game-grid">
+        <article class="game-card featured">
+          <div class="game-art">
+
+          <video autoplay muted loop playsinline
+              poster="Images/WemosBoard.jpg">
+
+          <source src="videos/Rolladillo.mp4"
+            type="video/mp4">
+
+          </video>
+          <span>GAMEPLAY</span>
+          </div>
+          <div class="game-info">
+            <p class="game-type">FEATURED PROJECT · 2026</p>
+            <h3>Rolladillo</h3>
+            <p><strong>In partnership with Sony</strong>, I had the opporunity to work with <strong>PS5 Dev Kits</strong>
+            to create a astrological world navigated by a cute space armadillo. This project aided my learning of ECS,
+            programming patterns, procedural generation,</p>
+            <div class="tags"><span>PS5 Dev Kits</span><span>Custom Abertay Engine</span><span>C++</span></div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-art art-2"><span>GAME 02</span></div>
+          <div class="game-info">
+            <p class="game-type">GAME JAM · 2026</p>
+            <h3>Buggy</h3>
+            <p>This C++ bug racing game used <strong>SFML and Mode7 rendering</strong> to create a pseudo-3D
+              kart racer with custom physics, AI opponents, collision detection, and a complete UI
+              system.</p>
+            <div class="tags"><span>SFML</span><span>C++</span></div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-art art-1">
+          <img src="Images/WemosBoard.jpg" alt="Screenshot of my game">
+          <span>GAME 01</span>
+          <div class="game-info">
+            <p class="game-type">PERSONAL PROJECT · 2025</p>
+            <h3>Naughts and Crosses. Wemos Board</h3>
+            <p>Arduino/C++ code for an advanced Noughts and Crosses game implemented on a Wemos board with several hardware components. 
+              Key Components Used: OLED Display
+              Adafruit SSD1306, TM1638 7-Segment Display with LEDs and Buttons, Buzzer, Red
+              and Blue LEDs, and Additional Physical Buttons.</p>
+            <div class="tags"><span>C++</span><span>Systems</span></div>
+          </div>
+        </article>
+
+    <section class="skills">
+      <div>
+        <p class="eyebrow">WHAT I DO</p>
+        <h2>Skills &amp; tools</h2>
+      </div>
+      <div class="skill-list">
+        <span>Unity</span>
+        <span>Unreal Engine</span>
+        <span>C#</span>
+        <span>C++</span>
+        <span>SFML</span>
+        <span>Git</span>
+        <span>LATEX</span>
+        <span>Python</span>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">LET'S TALK</p>
+      <h2>Want to work together?</h2>
+      <p>I'm always happy to talk about games, projects, collaborations or opportunities.</p>
+      <div class="contact-links">
+        <a class="button primary" href="kayleigh.odonnell@gmail.com">Email me</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/kayleigh-o-donnell-6b3506447/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button secondary" href="https://github.com/Kaykay266" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Kayleigh O'Donnell</span>
+  </footer>
 </body>
-
 </html>
